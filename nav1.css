@@ -1,0 +1,38 @@
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+    padding: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+
+
+}
+
+nav .old {
+    display: flex;
+}
+
+nav ul li:hover {
+    background-color: lightslategrey
+}
+
+.new-list {
+    display: none;
+    position: absolute;
+    background-color: lightyellow;
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+}
+
+.new-list li {
+    padding: 0 10px;
+    margin: 10px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket animation</title>
+</head>
+<style>
+    .field {
+
+        height: 800px;
+        width: 1500px;
+        border: 2px solid black;
+
+    }
+
+    .ball {
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+        border-radius: 25px;
+        background-color: red;
+    }
+
+    img {
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .field:hover img {
+        transform: rotate(-60deg);
+        transform-origin: top right;
+    }
+
+    .ball {
+        position: relative;
+        left: 668px;
+        transition: transform 0.5s ease-out 0.1s;
+    }
+
+    .field:hover .ball {
+        transform: translate(1000px, -600px);
+    }
+
+    .mar {
+        font-size: 120px;
+        position: relative;
+        left: 600px;
+        bottom: 680px;
+
+        visibility: hidden;
+        transition: visibility 0.1s ease-out 0.5s;
+    }
+
+    .field:hover .mar {
+        visibility: visible;
+    }
+
+    .mar img {
+        width: 20%;
+        height: 20%;
+    }
+</style>
+
+<body>
+    <div class="field">
+        <h1>Cricket Gallery</h1>
+        <img src="cricket/cbat.png" alt="">
+        <div class="ball">
+        </div>
+        <p class="mar"><img src="cricket/six.PNG" alt=""></p>
+    </div>
+</body>
+
+</html>

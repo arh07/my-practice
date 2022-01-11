@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+</head>
+<style>
+    .container,
+    .inner {
+        width: 150px;
+        height: 150px;
+        border: 2px solid turquoise;
+    }
+
+    .inner {
+        background-color: indianred;
+        transform: scale(0.8) rotate(45deg);
+    }
+
+    .container {
+        background-color: khaki;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="inner">box-1</div>
+    </div>
+    <div class="container">
+        <div class="inner">box-2</div>
+    </div>
+</body>
+
+</html>
